@@ -176,8 +176,11 @@ const settings = [
 function setup(){
   createCanvas(540,540);
   textFont("Noto Serif KR");
-  settings[index].generate();
-  cursor(HAND);
+  text("a",0,0);
+  setTimeout(()=>{
+    settings[index].generate();
+    cursor(HAND);
+  },500)
 }
 
 function createModule(m){
